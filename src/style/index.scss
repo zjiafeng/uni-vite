@@ -1,0 +1,73 @@
+@import "./uni.scss";
+@import "./iconfont.scss";
+
+// 文本对齐方式
+$align: left, center, right, justify;
+@each $c in $align {
+  .align-#{$c} {
+    text-align: $c;
+  }
+}
+
+$margin: (
+  top: 3 5 10 15 20 30,
+  right: 3 5 10 15 20 30,
+  bottom: 3 5 10 15 20 30,
+  left: 3 5 10 15 20 30
+);
+@each $direction, $value in $margin {
+  @each $num in $value {
+    .m-#{str-slice($direction, 1, 1)}-#{$num}px {
+      margin-#{$direction}: #{$num * 2}rpx;
+    }
+  }
+}
+
+.v-middle {
+  vertical-align: middle;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+page{
+  padding-bottom: $uni-spacing-col-base;
+  background-color: $uni-bg-color-grey;
+  width: 100%;
+  color: $uni-text-color;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
