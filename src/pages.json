@@ -21,7 +21,21 @@
 				"enablePullDownRefresh": false
 			}
 		},
-		{"path": "pages/detail/index"}
+		{"path": "pages/detail/index"},
+		{
+			"path": "pages/small-tool/index",
+			"style": {
+				"navigationBarTitleText": "工具",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/small-tool/national-day/index",
+			"style": {
+				"navigationBarTitleText": "国庆头像生成",
+				"enablePullDownRefresh": false
+			}
+		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -47,20 +61,26 @@
 		"list": [
 			{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/image/home.png",
-				"selectedIconPath": "static/image/home-h.png",
+				"iconPath": "static/image/default/home.png",
+				"selectedIconPath": "static/image/default/home-h.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/search/index",
-				"iconPath": "static/image/search.png",
-				"selectedIconPath": "static/image/search-h.png",
+				"iconPath": "static/image/default/search.png",
+				"selectedIconPath": "static/image/default/search-h.png",
 				"text": "搜索"
 			},
 			{
+				"pagePath": "pages/small-tool/index",
+				"iconPath": "static/image/default/small-tool.png",
+				"selectedIconPath": "static/image/default/small-tool-h.png",
+				"text": "工具"
+			},
+			{
 				"pagePath": "pages/about/index",
-				"iconPath": "static/image/about.png",
-				"selectedIconPath": "static/image/about-h.png",
+				"iconPath": "static/image/default/about.png",
+				"selectedIconPath": "static/image/default/about-h.png",
 				"text": "关于"
 			}
 		]

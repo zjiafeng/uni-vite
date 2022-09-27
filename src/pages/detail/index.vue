@@ -154,6 +154,9 @@ const getDetail = async (id: string | undefined) => {
         content
     }
     state.article = article
+    // res.data.title && res.data.title.rendered && uni.setNavigationBarTitle({
+    //     title: res.data.title.rendered
+    // });
 }
 const getCommentList = async (id: string | undefined) => {
     if (state.totalPage && state.currentPage > state.totalPage) {

@@ -10,7 +10,7 @@
                 <view slot="actions" class="card-actions">
                     <view class="article-item__category ^m-r-5px">
                         <uniTag class="^m-r-10px" v-if="Array.isArray(item.articleInfor.classify)"
-                            v-for="(tag, index) in item.articleInfor.classify.splice(0, 2)" :key="index"
+                            v-for="(tag, index) in item.articleInfor.classify.slice(0, 2)" :key="index"
                             :text="tag.name" type="success">
                         </uniTag>
                     </view>
@@ -108,7 +108,6 @@ const getArticleList = (isLoadMore = false) => {
     }
 
     // 是否为最后一页
-    console.log(state.totalPage,state.currentPage);
     
     if (state.totalPage && state.currentPage > state.totalPage) {
         state.loadingMore = false
@@ -122,7 +121,7 @@ const getArticleList = (isLoadMore = false) => {
         let { data, header } = res
         state.loadingMore = false
         state.articleList = [...state.articleList, ...data]
-        console.log(res);
+        console.log(state.articleList);
         
         state.totalPage = header['X-WP-TotalPages']
         emits('loaded')

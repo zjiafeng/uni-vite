@@ -2,7 +2,7 @@
 	<view class="uni-margin-wrap">
 		<swiper class="swiper" circular :indicator-dots="true" :autoplay="true" :interval="2000" :duration="500">
 			<swiper-item v-for="(item, index) in state.banner" :key="index">
-				<image class="swiper-image" :src="item.path" mode="scaleToFill"></image>
+				<image class="swiper-image" :src="item.path" mode="scaleToFill" @click="handleLink(item.link)"></image>
 			</swiper-item>
 		</swiper>
 	</view>
@@ -54,6 +54,11 @@ const getGlobalInfo = () => {
 	})
 }
 
+const handleLink = (url: string) => {
+	const id = url.split('/')[url.split('/').length - 1]
+	typeof parseInt(id) === 'number' && uni.navigateTo({url: '/pages/detail/index?id='+parseInt(id)});
+}
+
 onReachBottom(() => {
 	state.isLoadMore = true
 })
@@ -72,7 +77,7 @@ const updateLoadMoreState = () => {
 <style lang="scss">
 @import "@/style/uni.scss";
 
-.uni-margin-wrap{
+.uni-margin-wrap {
 	width: calc(100% - 30px);
 	margin: 4px auto;
 }
@@ -90,6 +95,6 @@ const updateLoadMoreState = () => {
 .swiper-image {
 	border-radius: $uni-border-radius-lg;
 	width: 100%;
-    height: 100%;
+	height: 100%;
 }
 </style>

@@ -11,9 +11,9 @@
                     <view class="^m-r-5px comment-item__author">
                         {{item.author_name}}
                         <image v-if="item.userAgentInfo.vipStyle.admin" class="comment-item__vip ^m-r-3px"
-                            mode="widthFix" src="../../static/image/icon-admin.png"></image>
+                            mode="widthFix" src="../../static/image/default/icon-admin.png"></image>
                         <image class="comment-item__vip" mode="widthFix"
-                            :src="`../../static/image/${item.userAgentInfo.vipStyle.level}.png`"></image>
+                            :src="`../../static/image/default/${item.userAgentInfo.vipStyle.level}.png`"></image>
                     </view>
                     <view class="comment-item__time">{{item.date}}</view>
                 </view>
