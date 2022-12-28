@@ -14,6 +14,12 @@ const toolList = ref([
         subTitle: '迎国庆 换新颜',
         image: '/static/image/national-day/share.jpg',
         link: '/pages/small-tool/national-day/index'
+    },
+    {
+        title: '腾讯地图定位',
+        subTitle: '获取当前城市',
+        image: '/static/image/national-day/map.png',
+        link: '/pages/small-tool/tx-map/index'
     }
 ])
 const handleLink = (url: string) => {

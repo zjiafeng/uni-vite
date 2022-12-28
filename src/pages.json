@@ -35,6 +35,13 @@
 				"navigationBarTitleText": "国庆头像生成",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/small-tool/tx-map/index",
+			"style": {
+				"navigationBarTitleText": "腾讯地图定位",
+				"enablePullDownRefresh": false
+			}
 		}
 	],
 	"globalStyle": {

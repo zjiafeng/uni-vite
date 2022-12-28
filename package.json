@@ -45,11 +45,13 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3050320220729001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3050320220729001",
     "@types/weixin-app": "^2.9.3",
+    "js-md5": "^0.7.3",
     "node-sass": "^4.0.0",
     "pinia": "^2.0.22",
     "sass": "^1.54.8",
     "sass-loader": "^10.0.1",
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "vue-jsonp": "^2.0.0"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.0.13",
