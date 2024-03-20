@@ -49,4 +49,4 @@ uni+vite小程序源码：[https://github.com/zjiafeng/uni-vite](https://github.
 
 #### 以下是我的小程序码，欢迎访问~
 
-![](https://www.jiafeng.co/images/logo/applet.png)
+![](https://www.jiafeng.fun/images/logo/applet.png)
